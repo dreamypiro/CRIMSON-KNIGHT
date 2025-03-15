@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bl3338r4ewe8c"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_2fphr"]
+file = "res://cut2.ogv"
+
+[node name="cutscene2" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+stream = SubResource("VideoStreamTheora_2fphr")

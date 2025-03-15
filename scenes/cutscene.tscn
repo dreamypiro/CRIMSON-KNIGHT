@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://cf7wauarkyyip"]
+
+[ext_resource type="Script" path="res://cutscene.gd" id="1_3oju7"]
+[ext_resource type="VideoStream" path="res://assets/Pixel Adventure 1/Free/Items/startin-cutscene.ogv" id="2_p2q8h"]
+
+[node name="first_vid" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_3oju7")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_p2q8h")
+autoplay = true
+expand = true
+
+[connection signal="finished" from="VideoStreamPlayer" to="." method="_on_video_stream_player_finished"]

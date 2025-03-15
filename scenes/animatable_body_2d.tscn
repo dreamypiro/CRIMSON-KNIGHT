@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ljgh16qpfhty"]
+
+[ext_resource type="Texture2D" uid="uid://csacnskbwbqmn" path="res://assets/PixelPlatformerSet1v.1.1 (1)/main_lev_build.png" id="1_jgyc8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_abnfv"]
+size = Vector2(80, 12.5263)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1, 1.35714)
+texture = ExtResource("1_jgyc8")
+region_enabled = true
+region_rect = Rect2(367, 319, 81, 14)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.5)
+scale = Vector2(1, 1.35714)
+shape = SubResource("RectangleShape2D_abnfv")
