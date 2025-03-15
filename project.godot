@@ -10,9 +10,10 @@ config_version=5
 
 [application]
 
-config/name="space adventure"
-run/main_scene="res://scenes/platform.tscn"
+config/name="FARAD"
+run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
+config/icon="res://icon.svg"
 
 [display]
 
@@ -20,5 +21,4 @@ window/stretch/mode="canvas_items"
 
 [rendering]
 
-textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
